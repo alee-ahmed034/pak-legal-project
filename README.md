@@ -2,7 +2,7 @@
 
 **Prepare before you go to the police station or a lawyer.** Describe what happened in Urdu or English, by voice or text, or upload a legal document, and get a plain-language explanation grounded in the official text of Pakistani law, with the exact Articles and Sections it used.
 
-**Live demo:** https://paklegal-ai.mahnoorawan203.workers.dev
+
 
 ---
 
@@ -118,7 +118,6 @@ The **draft complaint for FIR registration** and the **case summary** are assemb
 ## Tech stack
 
 - **App:** [TanStack Start](https://tanstack.com/start) (React 19 + SSR), TypeScript, Tailwind CSS v4, Urdu/English with RTL
-- **Hosting:** Cloudflare Workers
 - **LLM:** [Groq](https://console.groq.com/) running `openai/gpt-oss-120b` (vision: `qwen/qwen3.8-27b`)
 - **RAG:** Cloudflare Workers AI embeddings (`@cf/baai/bge-m3`, multilingual) + Cloudflare Vectorize
 - **Documents and speech:** `unpdf` for PDF text; Groq Whisper (`whisper-large-v3`) for voice, recorded with `MediaRecorder`
@@ -131,14 +130,12 @@ The **draft complaint for FIR registration** and the **case summary** are assemb
 Prerequisites: Node.js 22+, a free [Groq API key](https://console.groq.com/keys), and a free Cloudflare account.
 
 ```bash
-git clone https://github.com/maan203/paklegal-ai.git
 cd paklegal-ai
 npm install
 echo "GROQ_API_KEY=your_groq_api_key" > .env.local
-npx wrangler login
 ```
 
-Build the legal knowledge base in your Cloudflare account (once):
+
 
 ```bash
 npm run rag:index     # create the "paklegal-laws" Vectorize index
