@@ -2,6 +2,8 @@
 
 **Prepare before you go to the police station or a lawyer.** Describe what happened in Urdu or English, by voice or text, or upload a legal document, and get a plain-language explanation grounded in the official text of Pakistani law, with the exact Articles and Sections it used.
 
+** Members: Ali Ahmed, Vinesh Kumar and Sadia
+
 
 
 ---
