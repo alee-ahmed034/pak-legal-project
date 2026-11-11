@@ -208,6 +208,3 @@ tests/                      # vitest unit tests
 
 PakLegal AI provides **general legal information, not legal advice**. It is not a substitute for a qualified lawyer.
 
-## License
-
-MIT
